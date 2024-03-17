@@ -1,0 +1,221 @@
+/* 
+===================================
+|| Fonts                          |
+===================================
+*/
+@import url("https://fonts.googleapis.com/css?family=Catamaran:400,700|Grand+Hotel");
+/* 
+===================================
+|| Variables                      |
+===================================
+*/
+
+:root {
+  /* FONTS */
+  --FF-PRIMARY: "Catamaran", san-serif;
+  --FF-SECONDARY: "Grand Hotel", cursive;
+  --FS-GLOBAL: clamp(50%, 5vw, 62.5%);
+  /* LETTER SPACING */
+  --LETTER-SPACING-PRIMARY: 0.25rem;
+  /* COLORS */
+  --CLR-PRIMARY: #678e3a;
+  --CLR-PRIMARY-LIGHT: #beed8c;
+  /* darkest gray is 1 */
+  --CLR-GRAY-1: #102a42;
+  --CLR-GRAY-5: #617d98;
+  --CLR-GRAY-10: #f1f5f8;
+  --CLR-WHITE: #fff;
+  /* BORDER-RADIUS */
+  --RADIUS-PRIMARY: 0.5rem;
+  /* BORDERS */
+  /* PADDING */
+  /* MARGINS */
+
+  /* TRANSITIONS */
+  --TRANSITION-PRIMARY: all 0.3s linear;
+}
+/* 
+===================================
+|| RESET                          |
+===================================
+*/
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+img,
+audio,
+picture,
+video {
+  max-width: 100%;
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+html {
+  /* font-size: var(--FS-GLOBAL); */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 0.875rem;
+  font-family: var(--FF-PRIMARY);
+  background-color: var(--CLR-WHITE);
+  color: var(--CLR-GRAY-1);
+  line-height: 1.5;
+  font-size: 1.4rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform: capitalize;
+  letter-spacing: var(--LETTER-SPACING-PRIMARY);
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25em;
+}
+
+@media screen and (min-width: 50em) {
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+}
+/*
+===================================
+|| UTILITY                        |
+===================================
+*/
+.btn,
+.btn:any-link {
+  text-transform: uppercase;
+  background-color: var(--CLR-PRIMARY);
+  color: var(--CLR-WHITE);
+  padding: 0.75rem 1rem;
+  letter-spacing: var(--LETTER-SPACING-PRIMARY);
+  display: inline-block;
+  font-weight: 700;
+  transition: var(--TRANSITION-PRIMARY);
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+.btn:hover,
+.btn:active {
+  color: var(--CLR-PRIMARY);
+  background-image: var(--CLR-PRIMARY-LIGHT);
+}
+/*
+===================================
+|| HEADER                         |
+===================================
+*/
+.header {
+  position: fixed;
+}
+/*
+===================================
+|| HERO                           |
+===================================
+*/
+.hero {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-image: linear-gradient(
+      145deg,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("../images/main-bcg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.hero__container {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero__heading span {
+  display: block;
+}
+.hero__text--accents {
+  font-size: 2rem;
+  font-family: var(--FF-SECONDARY);
+  color: var(--CLR-PRIMARY);
+  margin-bottom: 0.75rem;
+  /* animation */
+}
+.hero__text {
+  text-transform: uppercase;
+  color: var(--CLR-WHITE);
+  /* margin-top: 0.1875em;
+  margin-bottom: 0.5em; */
+  margin-top: 1.25rem;
+  margin-bottom: 2rem; /* animation */
+}
+.hero__btn,
+.hero__btn:any-link {
+  outline: 0.125rem solid var(--CLR-PRIMARY);
+  outline-offset: 0.25rem;
+  font-size: 1.25rem;
+  padding: 1rem 1.75rem;
+}
+@media screen and (min-width: 50em) {
+  .hero__text--accents {
+    font-size: 2.5rem;
+  }
+}
