@@ -166,6 +166,38 @@ p {
     var(--CLR-PRIMARY)
   );
 }
+
+/* 2 column layout */
+.section__header {
+  margin-block-end: 2rem;
+}
+.section__title__accent {
+  display: block;
+  font-family: var(--FF-SECONDARY);
+  color: var(--CLR-PRIMARY);
+  font-size: 1.5rem;
+  margin-block-end: 0.75rem;
+}
+.section__center {
+  padding-block: 4rem;
+  max-width: min(85%, 1170px);
+  margin-inline: auto;
+}
+@media screen and (min-width: 50em) {
+  .section__title__accent {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 62em) {
+  .section__center {
+    max-width: min(95%, 1170px);
+    padding: 4rem 1rem;
+  }
+  .layout__col-2 .column {
+    float: left;
+    width: 50%;
+  }
+}
 /*
 ===================================
 || HEADER                         |
@@ -245,6 +277,7 @@ p {
 .feature__list {
   list-style: none;
 }
+
 .feature__item {
   padding-block: 2.5rem;
   text-align: center;
@@ -258,11 +291,13 @@ p {
   font-size: 2.5rem;
   color: var(--CLR-PRIMARY);
   margin-block-end: 1.25rem;
-  transition: var(--TRANSITION-PRIMARY);
   display: block;
 }
-.feature__item:hover .feature__item__icon {
-  transform: translateY(-5px) scale(1.05);
+.feature__item__icon > i {
+  transition: var(--TRANSITION-PRIMARY);
+}
+.feature__item:hover .feature__item__icon > i {
+  transform: translateY(-5px) scale(1.2);
 }
 .feature__item__text {
   color: var(--CLR-GRAY-5);
@@ -278,5 +313,36 @@ p {
 @media screen and (min-width: 75em) {
   .feature__list__item__container {
     max-width: 25%;
+  }
+}
+/*
+===================================
+|| ABOUT                          |
+===================================
+*/
+.about__img__container,
+.about__text__container {
+  padding-block: 2rem;
+}
+.about__img__wrapper {
+  background-color: var(--CLR-PRIMARY);
+  border: 0.5rem solid var(--CLR-PRIMARY);
+  max-width: 30rem;
+  overflow: hidden;
+}
+.about__img {
+  transition: var(--TRANSITION-PRIMARY);
+}
+.about__img__wrapper:hover .about__img {
+  transform: scale(1.2);
+  opacity: 0.5;
+}
+.about__text {
+  max-width: 26rem;
+  color: var(--CLR-GRAY-5);
+}
+@media screen and (min-width: 62em) {
+  .about__text__container {
+    padding-left: 2rem;
   }
 }
