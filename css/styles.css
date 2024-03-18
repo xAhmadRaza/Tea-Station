@@ -513,7 +513,7 @@ p {
 }
 /*
 ===================================
-|| CONTACT                 |
+|| CONTACT                        |
 ===================================
 */
 
@@ -604,4 +604,42 @@ p {
     float: left;
     width: 50%;
   }
+}
+/*
+===================================
+|| fOOTER                         |
+===================================
+*/
+
+.footer {
+  background-color: #222;
+  text-align: center;
+}
+.social__icon {
+  color: var(--CLR-WHITE);
+  font-size: 1.5rem;
+  margin-inline-end: 1rem;
+  transition: var(--TRANSITION-PRIMARY);
+}
+.social__icon:hover {
+  color: var(--CLR-PRIMARYs);
+}
+.copyright {
+  margin-block-start: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: var(--LETTER-SPACING-PRIMARY);
+  line-height: 1.25;
+  color: var(--CLR-WHITE);
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+@media screen and (min-width: 50em) {
+  .copyright {
+    font-size: 1rem;
+    line-height: 1;
+  }
+}
+.brand__name {
+  color: var(--CLR-PRIMARY);
 }
