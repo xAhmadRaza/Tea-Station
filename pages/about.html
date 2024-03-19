@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tea Station || About</title>
+    <!-- font-awesome -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha512-9BwLAVqqt6oFdXohPLuNHxhx36BVj5uGSGmizkmGkgl3uMSgNalKc/smum+GJU/TTP0jy0+ruwC3xNAk3F759A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="../css/styles.css" />
+
+    <script src="../js/script.js" defer></script>
+  </head>
+  <body>
+    <!-- start of heeder/navbar -->
+    <header class="header" id="navbar">
+      <nav class="navbar__container">
+        <button type="button" aria-label="close menu" id="nav__close" class>
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a class="navbar__link" href="../index.html">home</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="./skills.html">skills</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="./about.html">about</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="./products.html">products</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- end of header/navbar -->
+    <button
+      class="nav__btn"
+      type="button"
+      aria-label="Open Nav Btn"
+      id="nav-btn"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+    <main>
+      <!-- start of hero -->
+      <article class="hero">
+        <div class="hero__container">
+          <h1 class="hero__heading">
+            <span class="hero__text--accents">Over one hundred flavors of</span>
+            <span class="hero__text">
+              specially <br />
+              crafted tea</span
+            >
+          </h1>
+          <a href="./pagesskills.html" class="btn hero__btn">Explore</a>
+        </div>
+      </article>
+      <!-- end of hero -->
+      <section class="about">
+        <div class="about__container layout__col-2 section__center clearfix">
+          <!-- about img start -->
+          <div class="about__img__container column">
+            <div class="about__img__wrapper">
+              <img
+                class="about__img"
+                src="../images/about-bcg.jpeg"
+                alt="tea kettle"
+              />
+            </div>
+          </div>
+          <!-- about img end -->
+          <!-- about info start -->
+          <article class="about__text__container column">
+            <header class="about__header section__header">
+              <h2 class="about__heading section__heading">
+                <span class="about__title__accent section__title__accent"
+                  >about our</span
+                >
+                <span class="about__title section">tea station</span>
+              </h2>
+            </header>
+            <p class="about__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+              tempore earum sed vitae assumenda provident.
+            </p>
+            <p class="about__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+              tempore earum sed vitae assumenda provident.
+            </p>
+            <footer>
+              <a href="./pages/about.html" class="btn">Learn More</a>
+            </footer>
+          </article>
+          <!-- about info end -->
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="section__center">
+        <div class="social__icons">
+          <!-- start social icon -->
+          <a href="#" class="social__icon"> <i class="fab fa-facebook"></i> </a>
+          <!-- end of social icon -->
+          <!-- start social icon -->
+          <a href="#" class="social__icon"> <i class="fab fa-twitter"></i> </a>
+          <!-- end of social icon -->
+          <!-- start social icon -->
+          <a href="#" class="social__icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <!-- end of social icon -->
+        </div>
+
+        <small class="copyright">
+          &copy; <time id="copyright__date"></time>
+          <span class="brand__name">tea station</span> all right reserved</small
+        >
+      </section>
+    </footer>
+  </body>
+</html>

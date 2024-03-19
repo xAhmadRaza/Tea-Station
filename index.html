@@ -21,16 +21,36 @@
   </head>
   <body>
     <!-- start of heeder/navbar -->
-    <header class="header">
-      <nav class="header__navigation">
-        <ul class="header__nav-items">
-          <li class="header__nav-item">
-            <a class="header__nav-link" href=""></a>
+    <header class="header" id="navbar">
+      <nav class="navbar__container">
+        <button type="button" aria-label="close menu" id="nav__close" class>
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a class="navbar__link" href="index.html">home</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="./pages/skills.html">skills</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="./pages/about.html">about</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="./pages/products.html">products</a>
           </li>
         </ul>
       </nav>
     </header>
     <!-- end of header/navbar -->
+    <button
+      class="nav__btn"
+      type="button"
+      aria-label="Open Nav Btn"
+      id="nav-btn"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
     <!-- YOUR CODE GOES HERE -->
     <main>
       <!-- start of hero -->
@@ -43,7 +63,7 @@
               crafted tea</span
             >
           </h1>
-          <a href="skills.html" class="btn hero__btn">Explore</a>
+          <a href="./pagesskills.html" class="btn hero__btn">Explore</a>
         </div>
       </article>
       <!-- end of hero -->
@@ -153,7 +173,7 @@
               tempore earum sed vitae assumenda provident.
             </p>
             <footer>
-              <a href=".about.html" class="btn">Learn More</a>
+              <a href="./pages/about.html" class="btn">Learn More</a>
             </footer>
           </article>
           <!-- about info end -->
@@ -180,7 +200,7 @@
               assumenda!
             </p>
             <footer>
-              <a href=".products.html" class="btn">inventory</a>
+              <a href="./pages/products.html" class="btn">inventory</a>
             </footer>
           </article>
           <!-- end of product info -->

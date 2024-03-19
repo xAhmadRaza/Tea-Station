@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tea Station || Products</title>
+    <!-- font-awesome -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha512-9BwLAVqqt6oFdXohPLuNHxhx36BVj5uGSGmizkmGkgl3uMSgNalKc/smum+GJU/TTP0jy0+ruwC3xNAk3F759A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="../css/styles.css" />
+
+    <script src="../js/script.js" defer></script>
+  </head>
+  <body>
+    <!-- start of heeder/navbar -->
+    <header class="header" id="navbar">
+      <nav class="navbar__container">
+        <button type="button" aria-label="close menu" id="nav__close" class>
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a class="navbar__link" href="../index.html">home</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="./skills.html">skills</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="./about.html">about</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="./products.html">products</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- end of header/navbar -->
+    <button
+      class="nav__btn"
+      type="button"
+      aria-label="Open Nav Btn"
+      id="nav-btn"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+    <main>
+      <!-- start of hero -->
+      <article class="hero">
+        <div class="hero__container">
+          <h1 class="hero__heading">
+            <span class="hero__text--accents">Over one hundred flavors of</span>
+            <span class="hero__text">
+              specially <br />
+              crafted tea</span
+            >
+          </h1>
+          <a href="./pagesskills.html" class="btn hero__btn">Explore</a>
+        </div>
+      </article>
+      <!-- end of hero -->
+      <section class="products">
+        <div class="products__container section__center clearfix">
+          <!-- start of product info -->
+          <article class="product__info">
+            <header class="product__info__header section__header">
+              <h2 class="product__info__heading section__heading">
+                <span class="about__title__accent section__title__accent"
+                  >Check out</span
+                >
+                <span class="about__title section__title">our products</span>
+              </h2>
+            </header>
+            <p class="product__text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Asperiores dicta voluptatem quaerat doloribus eum eius totam, rem
+              officia cupiditate reprehenderit hic, amet, veniam repellat
+              assumenda!
+            </p>
+            <footer>
+              <a href="./pages/products.html" class="btn">inventory</a>
+            </footer>
+          </article>
+          <!-- end of product info -->
+          <!-- start of product items -->
+          <ul class="product__list">
+            <!-- start of product item -->
+            <li class="product__item__container">
+              <article class="product__item">
+                <header class="product__header">
+                  <img
+                    class="product__img"
+                    src="../images/product-1.jpeg"
+                    alt="ginger peach tea"
+                  />
+                  <h4>ginger peach tea</h4>
+                  <div class="product__price">$6.99</div>
+                </header>
+              </article>
+            </li>
+            <!-- end of product item -->
+            <li class="product__item__container">
+              <article class="product__item">
+                <header class="product__header">
+                  <img
+                    class="product__img"
+                    src="../images/product-2.jpeg"
+                    alt="fruit sangria"
+                  />
+                  <h4>Fruit Sangria</h4>
+                  <div class="product__price">$6.99</div>
+                </header>
+              </article>
+            </li>
+            <!-- end of product item -->
+            <li class="product__item__container">
+              <article class="product__item">
+                <header class="product__header">
+                  <img
+                    class="product__img"
+                    src="../images/product-3.jpeg"
+                    alt="White Tea "
+                  />
+                  <h4>White Tea</h4>
+                  <div class="product__price">$6.99</div>
+                </header>
+              </article>
+            </li>
+            <!-- end of product item -->
+          </ul>
+          <!-- end of product items -->
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="section__center">
+        <div class="social__icons">
+          <!-- start social icon -->
+          <a href="#" class="social__icon"> <i class="fab fa-facebook"></i> </a>
+          <!-- end of social icon -->
+          <!-- start social icon -->
+          <a href="#" class="social__icon"> <i class="fab fa-twitter"></i> </a>
+          <!-- end of social icon -->
+          <!-- start social icon -->
+          <a href="#" class="social__icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <!-- end of social icon -->
+        </div>
+
+        <small class="copyright">
+          &copy; <time id="copyright__date"></time>
+          <span class="brand__name">tea station</span> all right reserved</small
+        >
+      </section>
+    </footer>
+  </body>
+</html>
