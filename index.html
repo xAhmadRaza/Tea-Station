@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Tea Station || Home</title>
+
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./images/tea-station-favicon.jpg"
+      type="image/x-icon"
+    />
     <!-- font-awesome -->
 
     <link
@@ -15,13 +22,15 @@
       referrerpolicy="no-referrer"
     />
     <!-- custom css -->
+    <!-- layout css -->
+    <link rel="stylesheet" href="./css/layout.css" />
     <link rel="stylesheet" href="./css/styles.css" />
 
     <script src="./js/script.js" defer></script>
   </head>
   <body>
     <!-- start of heeder/navbar -->
-    <header class="header" id="navbar">
+    <!-- <header class="header" id="navbar">
       <nav class="navbar__container">
         <button type="button" aria-label="close menu" id="nav__close" class>
           <i class="fas fa-times"></i>
@@ -41,16 +50,45 @@
           </li>
         </ul>
       </nav>
-    </header>
+    </header> -->
     <!-- end of header/navbar -->
-    <button
+    <!-- <button
       class="nav__btn"
       type="button"
       aria-label="Open Nav Btn"
       id="nav-btn"
     >
       <i class="fas fa-bars"></i>
-    </button>
+    </button> -->
+
+    <header class="header" id="navbar">
+      <nav class="navbar__container">
+        <button
+          type="button"
+          aria-label="toggle menu button"
+          id="navigation__btn"
+        >
+          <div class="navigation__icon">&nbsp;</div>
+        </button>
+
+        <div class="background"></div>
+
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a class="navbar__link" href="index.html">home</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="./pages/skills.html">skills</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="./pages/about.html">about</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="./pages/products.html">products</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <!-- YOUR CODE GOES HERE -->
     <main>
       <!-- start of hero -->
@@ -363,7 +401,7 @@
       <!-- end of services -->
       <!-- start contact section -->
       <section class="contact">
-        <div class="section__center clearfix">
+        <div class="section__center clearfix contact__container">
           <address class="contact__info">
             <!-- start of contact item: Address -->
             <article class="contact__item">

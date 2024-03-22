@@ -4,9 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Tea Station || Skills</title>
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="../images/tea-station-favicon.jpg"
+      type="image/x-icon"
+    />
     <!-- font-awesome -->
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
@@ -15,17 +19,28 @@
       referrerpolicy="no-referrer"
     />
     <!-- custom css -->
+    <!-- layout css -->
+    <link rel="stylesheet" href="../css/layout.css" />
     <link rel="stylesheet" href="../css/styles.css" />
-
+    <!-- javascript -->
     <script src="../js/script.js" defer></script>
+    <!-- title -->
+    <title>Tea Station || Skills</title>
   </head>
   <body>
     <!-- start of heeder/navbar -->
     <header class="header" id="navbar">
       <nav class="navbar__container">
-        <button type="button" aria-label="close menu" id="nav__close" class>
-          <i class="fas fa-times"></i>
+        <button
+          type="button"
+          aria-label="toggle menu button"
+          id="navigation__btn"
+        >
+          <div class="navigation__icon">&nbsp;</div>
         </button>
+
+        <div class="background"></div>
+
         <ul class="navbar__list">
           <li class="navbar__item">
             <a class="navbar__link" href="../index.html">home</a>
@@ -43,14 +58,7 @@
       </nav>
     </header>
     <!-- end of header/navbar -->
-    <button
-      class="nav__btn"
-      type="button"
-      aria-label="Open Nav Btn"
-      id="nav-btn"
-    >
-      <i class="fas fa-bars"></i>
-    </button>
+
     <main>
       <!-- start of hero -->
       <article class="hero">
